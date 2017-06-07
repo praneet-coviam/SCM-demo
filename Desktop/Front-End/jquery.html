@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("body").on("click",".add",function(){
+    	var form="<div class='form'>Name:<input type='text' class='texsubmit'><button class='add'>+</button><button class='sub's>-</button><br><button class='submit'>Submit</button></div>";
+        $("body").append(form);
+    });
+    $("body").on("click",".sub",function(){
+        $(this).parent().remove();
+    });
+
+    $("body").on("click",".submit",function(){
+	var val1=$(this).parent().find('input').val();
+   	$("body").append('<h4 align="right">'+val1+'</h4>');
+	});
+});
+</script>
+</head>
+<body>
+<div class="form">
+Name:
+<input type="text" class="texsubmit">
+<button class="add">+</button>
+<br>
+<button class="submit">Submit</button>
+</div>
+</body>
+</html>

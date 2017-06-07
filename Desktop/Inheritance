@@ -1,0 +1,27 @@
+Inheritance 
+
+*unidirectional
+*build classes based upon existing classes.
+*IS A relationship
+*implemented by extends keyword, keyword “instanceOF” keyword, also used to check inheritance.
+*inherit fields and methods from super class
+*used for code reusability and method over-riding
+*modelling the relationships between the classes.
+*Dog inherited code from Animal. Poodle inherited code from Dog. That way, code that was common to all Animals lives in Animal, all Dogs lives in Dog, and stuff special to Poodles lives only in Poodle.
+
+Types
+-Single
+-Multi-Level
+-Hierarchal
+-Multiple Inheritance
+
+a class can implement one or more interfaces, which has helped Java get rid of the impossibility of multiple inheritance.
+
+
+Advantages
+*used for code reusability and method over-riding.
+
+Disadvantages
+*Tight Coupling(unwanted parameters are un-necessarily coupled to the subclass, can be removed by composition)
+* it voids encapsulation.
+
